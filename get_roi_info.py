@@ -35,10 +35,11 @@ def analyze_mask(mask_path):
         elif label == 2:
             roi_name = "Tumor"
 
-        size = dimensions[0]*dimensions[1]*dimensions[2]/1024/1024
+        size_vertices = dimensions[0]*dimensions[1]*dimensions[2]
+        size_mb = size_vertices/1024/1024
         print(f"  - ROI: '{roi_name}' (Label: {int(label)})")
-        print(f"    Bounding size MB: {size}")
-        print(f"    Bounding Box Dimensions (voxels): {dimensions[0]} x {dimensions[1]} x {dimensions[2]}")
+        print(f"    Bounding size MB: {size_mb}")
+        print(f"    Bounding Box Dimensions (voxels): {dimensions[0]} x {dimensions[1]} x {dimensions[2]} = {size_vertices} ")
 
 
 if __name__ == "__main__":
