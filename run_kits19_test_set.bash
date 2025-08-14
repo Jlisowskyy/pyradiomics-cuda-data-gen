@@ -5,8 +5,8 @@ readonly REPO_PATH="https://github.com/PiotrTyrakowski/pyradiomics-CUDA.git"
 readonly TEST_SET_REPO="https://github.com/neheller/kits19.git"
 readonly PYTHON_COMMAND="python3.9"
 readonly BUILD_DIR="${DIR}/build"
-readonly NUM_TEST_INPUT_POINTS=2
-readonly NUM_TEST_REPEATS_PER_INPUT_POINT=2
+readonly NUM_TEST_INPUT_POINTS=20
+readonly NUM_TEST_REPEATS_PER_INPUT_POINT=10
 
 # 1. Setup build directory
 mkdir build
